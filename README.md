@@ -1,5 +1,8 @@
 # Retroindy
 
+[![Build Status](https://ci.samczsun.com/job/java-deobfuscator/job/Retroindy/badge/icon)](https://ci.samczsun.com/job/java-deobfuscator/job/Retroindy/)
+  
+
 ~~Some~~ All decompilers have some trouble with Java 8 features, like `invokedynamic`
 and `ldc`-ing `MethodType` and `MethodHandle`. It's makes it a huge pain when trying to decompile something
 because you have to go through the disassembly and whatever. Instead, run it through this Retroindy first and see
@@ -8,6 +11,10 @@ if the program is actually as hard to read as you thought it was.
 Note that the resulting program **is not** semantically equivalent to the original code.
 For one, the call stack during bootstrapping will be different. Do not attempt to use the
 resulting program in production!
+
+## Download
+
+Builds can be downloaded from [the CI](https://ci.samczsun.com/job/java-deobfuscator/job/Retroindy/)
 
 ## Usage
 
